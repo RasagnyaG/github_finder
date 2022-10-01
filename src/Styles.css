@@ -43,8 +43,11 @@
   opacity: 60%;
 }
 .navbar-brand{
-  margin-right: 0;
+  margin-right: 1rem;
 }
 .about{
   margin: 3rem;
+}
+.links{
+  display: flex;
 }

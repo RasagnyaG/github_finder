@@ -19,6 +19,7 @@ class NavBar extends Component {
     return (
       <Navbar bg="dark" variant="dark">
         <Container fluid className="cont">
+          <div className="links">
           <Link className="navbar-brand" to="/" onClick={this.handleClick}>
             Github Finder
           </Link>
@@ -31,6 +32,7 @@ class NavBar extends Component {
               About
             </Link>
           </Nav>
+          </div>
 
           <Search searchUsers={this.props.searchUsers} ref={this.Reference} />
         </Container>
