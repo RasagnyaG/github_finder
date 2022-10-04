@@ -1,9 +1,14 @@
 import React from "react";
 import User from "./User";
+import Spinner from "react-bootstrap/Spinner";
 
-function Users({ users, loading }) {
+const Users = ({ users, loading }) => {
   if (loading === true) {
-    return <loader />;
+    return (
+      <div className="spinnerdiv">
+        <Spinner animation="border" className="spinner" />
+      </div>
+    );
   } else {
     return (
       <div className="users">

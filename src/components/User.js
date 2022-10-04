@@ -1,7 +1,7 @@
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
-function User({ user }) {
+const User = ({ user }) => {
   const { id, login, avatar_url, html_url } = user;
   return (
     <div>
